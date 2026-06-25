@@ -407,6 +407,11 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 72px;
   align-items: center;
+  direction: rtl;
+}
+
+.about-inner > * {
+  direction: ltr;
 }
 
 .about-content h2 {
