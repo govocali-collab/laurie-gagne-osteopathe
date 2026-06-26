@@ -132,7 +132,7 @@
               3. Replace action="#" with action="https://formspree.io/f/YOUR_ID"
               4. Remove the onsubmit handler and id="contactForm"
           -->
-          <form id="contactForm" action="#" method="POST" onsubmit="handleSubmit(event)">
+          <form id="contactForm" action="https://formspree.io/f/mykqwerr" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Nom complet</label>
@@ -226,13 +226,6 @@
     });
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    function handleSubmit(e) {
-      e.preventDefault();
-      // When Formspree is connected, remove this function and the onsubmit attribute.
-      // The form will submit natively to Formspree and redirect or show their thank-you.
-      document.getElementById('contactForm').style.display = 'none';
-      document.getElementById('formSuccess').classList.add('show');
-    }
   </script>
 </body>
 </html>
